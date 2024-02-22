@@ -1,0 +1,352 @@
+/* Gemoderniseerde Stijl.css voor Paarden Informatie Website */
+body {
+    background-color: #F9F9F9; /* Lichtere achtergrondkleur */
+    color: #333; /* Behoud van donkergrijs voor tekst */
+    font-family: 'Segoe UI', Arial, sans-serif; /* Moderner lettertype */
+    margin: 0;
+    line-height: 1.6; /* Verbeterde regelhoogte voor leesbaarheid */
+}
+
+#bovenbalk, header, footer {
+    background-color: #333; /* Donkere achtergrond voor een strakke look */
+    color: #FCAC79; /* Witte tekst voor contrast */
+    padding: 5px 30px; /* Ruimte aan de boven- en onderkant 5px, aan de zijkanten 20px */
+    text-align: center;
+    font-size: 20px; /* Iets grotere tekst */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtiele schaduw voor diepte */
+    display: flex; /* Toegevoegd voor flex layout */
+    justify-content: space-between; /* Elementen uitlijnen aan beide zijden */
+    align-items: center; /* Verticale uitlijning */
+}
+
+#hoofdbalk {
+    background-color: #ffffff; /* Behoud van witte achtergrond */
+    color: #FCAC79; /* Behoud van donkergrijs voor tekst */
+    padding: 2px; /* Aangepaste padding voor consistentie */
+    display: flex; /* Gebruik flexbox om elementen naast elkaar te plaatsen */
+    align-items: center; /* Verticaal centreren */
+}
+
+#hoofdbalk img {
+    width: 150px; /* Verklein het logo naar 150 pixels breed */
+}
+
+
+/* Stijl voor zoekcontainer */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+	margin-top: 70px; /* Bestaande waarde, verhoog deze waarde om de zoekbalk lager te plaatsen */
+}
+
+.search-container form {
+    display: flex;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #333;
+    width: 600px;
+    border-radius: 4px 0 0 4px; /* Ronde hoeken aan de linkerkant */
+    transition: all 0.3s ease;
+}
+
+.search-container button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #FCAC79; /* Knop kleur */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0; /* Ronde hoeken aan de rechterkant */
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #e6956f; /* Donkerder tint voor hover effect */
+}
+
+.search-container input[type="text"]:focus {
+    box-shadow: 0 0 8px 0 rgba(252, 172, 121, 0.8); /* Focus schaduw */
+}
+
+.search-result {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-left: 3px solid #fcac79;
+}
+
+
+/* Toegevoegde stijlen voor contact-info en language-selector */
+.contact-info a, .language-selector select {
+    color: #FCAC79; /* Witte tekst voor contrast */
+    text-decoration: none;
+    font-size: 16px; /* Aangepaste grootte voor leesbaarheid */
+}
+
+.contact-info a {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info a i {
+    margin-right: 5px;
+}
+.contact-info a:hover, .language-selector select:hover {
+    color: #ffffff; /* Kleur voor hover effect */
+}
+
+
+
+.language-selector select {
+    border: 1px solid #FCAC79;
+    background-color: #333; /* Achtergrondkleur overeenkomst */
+    color: #FCAC79; /* Tekstkleur overeenkomst */
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+main {
+    padding: 20px;
+}
+
+a {
+    color: #007bff; /* Moderne blauwe tint voor links */
+    transition: color 0.3s; /* Vloeiende overgang voor hover effect */
+}
+
+a:hover, a:focus {
+    color: #0056b3; /* Donkerder blauw voor hover/focus */
+}
+
+button {
+    background-color: #007bff; /* Moderne blauwe tint */
+    color: #ffffff; /* Witte tekst voor contrast */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Vloeiende randen */
+    transition: background-color 0.3s; /* Vloeiende overgang voor hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Donkerder blauw voor hover */
+}
+
+.purple-accent {
+    color: #6f42c1; /* Moderne paarse tint */
+}
+/* Navigatiebalk styling */
+#navigatie {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Zorgt ervoor dat de navigatiebalk boven andere content blijft */
+}
+#navigatie ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    text-align: center;
+}
+
+#navigatie li {
+    display: inline-block;
+}
+
+#navigatie li a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Dropdown styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.dropdown-content a:hover {
+    background-color: #FCAC79; /* Donkerdere achtergrond voor hover */
+    color: white; /* Optioneel: Verander tekstkleur bij hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #FCAC79;
+}
+.container {
+    position: relative;
+    width: 100%; /* Maakt de container de volledige breedte */
+}
+
+.image-link img {
+    width: 100%;
+    height: auto; /* Behoudt aspect ratio */
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    width: 55%;
+    height: 100%; /* Maakt de overlay de volledige grootte van de afbeelding */
+    opacity: 1; /* Tekst is altijd zichtbaar */
+    display: flex;
+    justify-content: center; /* Centreert de tekst horizontaal */
+    align-items: center; /* Centreert de tekst verticaal */
+    font-size: 24px; /* Aanpassing van de tekstgrootte */
+    padding: 20px;
+    box-sizing: border-box; /* Zorgt ervoor dat padding deel uitmaakt van de breedte/hoogte */
+    transition: transform .5s ease, font-size .5s ease; /* Voegt animatie toe voor transform en font-size */
+}
+
+.container:hover .overlay {
+    transform: scale(1.05); /* Laat de tekst iets naar voren en groter komen bij hover */
+    font-size: 28px; /* Vergroot de tekst bij hover */
+}
+
+/* Responsive aanpassingen */
+
+.full-width-image {
+    text-align: center; /* Zorgt ervoor dat de afbeelding in het midden wordt uitgelijnd */
+    margin-top: 20px; /* Voeg indien nodig marge boven de afbeelding toe */
+    margin-bottom: 20px; /* Voeg indien nodig marge onder de afbeelding toe */
+}
+
+.full-width-image img {
+    width: 80%; /* Zorgt ervoor dat de afbeelding de volledige breedte van zijn container inneemt */
+    height: auto; /* Behoudt de juiste hoogte-breedteverhouding van de afbeelding */
+}
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Afstand tussen de afbeeldingen */
+}
+
+.image-gallery a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 270px; /* Aanpasbaar naar wens */
+    height: 550px; /* Aanpasbaar naar wens */
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease; /* Zorgt voor een soepele overgang bij het transformeren */
+}
+
+.image-gallery a:hover img {
+    transform: scale(1.1); /* Dit zorgt voor het inzoom-effect bij hover */
+}
+
+.image-text1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Volle breedte van de parent */
+    background-color: rgba(0, 0, 0, 0.5); /* Halfdoorzichtige achtergrond voor tekst */
+    color: #FCAC79; /* Tekstkleur */
+    text-align: center;
+    padding: 10px 0; /* Aangepaste ruimte binnen de tekstcontainer, verhoogd van 5px naar 10px */
+    font-size: 30px; /* Aangepaste tekstgrootte */
+    transition: background-color 0.5s ease; /* Soepele overgang voor de achtergrondkleur */
+}
+
+.image-gallery a:hover .image-text1 {
+    background-color: rgba(0, 0, 0, 0.7); /* Donkerdere achtergrond bij hover */
+}
+
+
+/* Basisstijlen: al toegepast in je CSS */
+
+@media (max-width: 768px) {
+    /* Stijlen voor tablets en mobiele apparaten */
+
+    .image-gallery {
+        flex-direction: column; /* Stapelt afbeeldingen verticaal */
+        align-items: center; /* Centreert items horizontaal */
+    }
+
+    .image-gallery a {
+        width: 90%; /* Maakt afbeeldingscontainers breder voor kleinere schermen */
+        height: auto; /* Aanpassen hoogte naar auto voor behoud van aspect ratio */
+    }
+
+    .image-gallery img {
+        height: auto; /* Aanpassen hoogte naar auto voor behoud van aspect ratio */
+    }
+
+    .search-container input[type="text"] {
+        width: 100%; /* Volle breedte van de container */
+        border-radius: 4px; /* Ronde hoeken rondom */
+    }
+
+    .search-container button {
+        width: 100%; /* Volle breedte van de container */
+        margin-top: 10px; /* Ruimte boven de knop */
+        border-radius: 4px; /* Ronde hoeken rondom */
+    }
+
+    #bovenbalk, header, footer {
+        flex-direction: column; /* Elementen verticaal stapelen */
+        padding: 10px; /* Aanpassen padding voor kleinere schermen */
+    }
+
+    #hoofdbalk img {
+        margin-bottom: 10px; /* Ruimte onder het logo */
+    }
+
+    .image-text1 {
+        font-size: 20px; /* Kleinere tekstgrootte voor betere leesbaarheid op kleine schermen */
+        padding: 8px 0; /* Aanpassen padding voor kleinere schermen */
+    }
+
+    /* Aanpassen van navigatie voor kleinere schermen */
+    #navigatie ul {
+        flex-direction: column; /* Verticale uitlijning van menu-items */
+    }
+
+    #navigatie li a {
+        padding: 10px; /* Aangepaste padding voor kleinere schermen */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra aanpassingen voor zeer kleine schermen, zoals mobiele telefoons */
+
+    .image-gallery a {
+        width: 95%; /* Nog breder voor zeer kleine schermen */
+    }
+
+    .search-container form, .search-container input[type="text"], .search-container button {
+        flex-direction: column; /* Elementen verticaal stapelen */
+    }
+}

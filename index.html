@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jouw Website Naam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bovenbalk">
+    Welkom Bij
+    <div class="contact-info">
+        <a href="mailto:info@galopgids.nl"><i class="fa fa-envelope"></i> info@galopgids.nl</a>
+    </div>
+<div class="language-selector">
+    <select onchange="window.location.href=this.value;">
+        <option value="index.html">🇳🇱 Nederlands</option>
+        <option value="pagina-en.html">🇬🇧 English</option>
+        <!-- Voeg hier meer talen toe indien nodig -->
+    </select>
+</div>
+
+</div>
+    <header id="hoofdbalk">
+  <img id="logo" src="logo.png" alt="GalopGids Logo"> <!-- Vervang 'pad/naar/jouw/logo.png' met het pad naar je logo -->
+  
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Zoeken...">
+    <button onclick="searchSite()">Zoek</button>
+</div>
+<div id="searchResults"></div>
+</header>
+
+<nav id="navigatie">
+    <ul>
+        <li class="dropdown">
+            <a href="#home" class="dropbtn">Home</a>
+            <div class="dropdown-content">
+            
+                <!-- Voeg meer submenu-items toe indien nodig -->
+            </div>
+        </li>
+		        <li class="dropdown">
+            <a href="#over" class="dropbtn">Rassen en Soorten</a>
+            <div class="dropdown-content">
+                <a href="#">Engelse Volbloed</a>
+                <a href="#">Arabisch Paard</a>
+				<a href="#">Quarter Horse</a>
+				<a href="#">Fjord</a>
+				<a href="#">Andere rassen</a>
+                <!-- Voeg meer submenu-items toe -->
+            </div>
+        </li>
+		     <li class="dropdown">
+            <a href="#over" class="dropbtn">Verzorging en Gezondheid</a>
+            <div class="dropdown-content">
+                <a href="#">Voeding en Dieet</a>
+                <a href="#">Hoefverzorging</a>
+				<a href="#">Vaccinatieschema</a>
+				<a href="#">Veiligheid op de Stal</a>
+				<a href="#">EHBO voor Paarden</a>
+                <!-- Voeg meer submenu-items toe -->
+            </div>
+        </li>
+		    <li class="dropdown">
+            <a href="#over" class="dropbtn">Training en Gedrag</a>
+            <div class="dropdown-content">
+                <a href="#">Basisdressuur</a>
+                <a href="#">Springen</a>
+				<a href="#">Westernrijden</a>
+				<a href="#">Gedragsproblemen oplossen</a>
+				<a href="#">Trail Riding</a>
+                <!-- Voeg meer submenu-items toe -->
+            </div>
+        </li>
+		<li class="dropdown">
+            <a href="#over" class="dropbtn">Fokkerij en Fokprogramma's</a>
+            <div class="dropdown-content">
+                <a href="#">Fokdoelen</a>
+                <a href="#">Foktechnieken</a>
+				<a href="#">Fokprogramma's</a>
+				<a href="#">Veulenopfok</a>
+				<a href="#">Fokkers en Stoeterijen</a>
+                <!-- Voeg meer submenu-items toe -->
+            </div>
+        </li>
+		<li class="dropdown">
+            <a href="#over" class="dropbtn">Hulpmiddelen en Uitrusting</a>
+            <div class="dropdown-content">
+                <a href="#">Zadels en Trens</a>
+                <a href="#">Paardrijdkleding</a>
+				<a href="#">Staluitrusting</a>
+				<a href="#">Paardenvervoer</a>
+				<a href="#">Trainingshulpmiddelen</a>
+                <!-- Voeg meer submenu-items toe -->
+            </div>
+        </li>
+		<li class="dropdown">
+            <a href="#over" class="dropbtn">Algemene Informatie</a>
+            <div class="dropdown-content">
+                <a href="#">Geschiedenis van Paarden</a>
+                <a href="#">Anatomie en Fysiologie</a>
+				<a href="#">Paardenverzekeringen</a>
+				<a href="#">Paardrijdtermen</a>
+				<a href="#">Leuke weetjes</a>
+                <!-- Voeg meer submenu-items toe -->
+            </div>
+        </li>
+		
+
+
+    </ul>
+</nav>
+    <main>
+	<div class="container">
+    <a href="https://voorbeeldpagina.com" class="image-link">
+        <img src="veulen1.jpg" alt="Omschrijving van de afbeelding">
+        <div class="overlay">
+          <img src="overafb.png" alt="Beschrijvende tekst van de afbeelding">
+		  
+        </div>
+    </a>
+</div>
+   <div class="full-width-image">
+        <img src="populair.png" alt="Omschrijving van de nieuwe afbeelding">
+    </div>
+        <!-- Je pagina inhoud -->
+<div class="image-gallery">
+    <a href="https://link-naar-pagina-1.com" class="image-link">
+        <img src="training.jpg" alt="Afbeelding 1">
+        <div class="image-text1">Training</div>
+    </a>
+    <a href="https://link-naar-pagina-2.com" class="image-link">
+        <img src="rassen.jpg" alt="Afbeelding 2">
+        <div class="image-text1">Rassen</div>
+    </a>
+    <a href="https://link-naar-pagina-3.com" class="image-link">
+        <img src="hoef.jpg" alt="Afbeelding 3">
+        <div class="image-text1">Hoefverzorging</div>
+    </a>
+    <a href="https://link-naar-pagina-4.com" class="image-link">
+        <img src="uitrusting.jpg" alt="Afbeelding 4">
+        <div class="image-text1">Uitrusting</div>
+    </a>
+</div>
+    </main>
+	<script src="script.js"></script>
+</body>
+</html>
