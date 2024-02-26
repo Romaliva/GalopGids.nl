@@ -25,63 +25,63 @@ body {
     padding: 2px; /* Aangepaste padding voor consistentie */
     display: flex; /* Gebruik flexbox om elementen naast elkaar te plaatsen */
     align-items: center; /* Verticaal centreren */
+    justify-content: center; /* Horizontaal centreren */
 }
 
 #hoofdbalk img {
-    width: 150px; /* Verklein het logo naar 150 pixels breed */
+    width: 300px; /* Verklein het logo naar 150 pixels breed */
 }
 
 
-/* Stijl voor zoekcontainer */
-.search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-	margin-top: 70px; /* Bestaande waarde, verhoog deze waarde om de zoekbalk lager te plaatsen */
-}
+    /* Stijl voor zoekcontainer */
+    .search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin-top: 70px; /* Bestaande waarde, verhoog deze waarde om de zoekbalk lager te plaatsen */
+    }
 
-.search-container form {
-    display: flex;
-}
+    .search-container form {
+        display: flex;
+    }
 
-.search-container input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: #333;
-    width: 600px;
-    border-radius: 4px 0 0 4px; /* Ronde hoeken aan de linkerkant */
-    transition: all 0.3s ease;
-}
+    .search-container input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: #333;
+        width: 600px;
+        border-radius: 4px 0 0 4px; /* Ronde hoeken aan de linkerkant */
+        transition: all 0.3s ease;
+    }
 
-.search-container button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #FCAC79; /* Knop kleur */
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 0 4px 4px 0; /* Ronde hoeken aan de rechterkant */
-    transition: background-color 0.3s ease;
-}
+    .search-container button {
+        padding: 10px;
+        font-size: 16px;
+        background-color: #FCAC79; /* Knop kleur */
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 0 4px 4px 0; /* Ronde hoeken aan de rechterkant */
+        transition: background-color 0.3s ease;
+    }
 
-.search-container button:hover {
-    background-color: #e6956f; /* Donkerder tint voor hover effect */
-}
+    .search-container button:hover {
+        background-color: #e6956f; /* Donkerder tint voor hover effect */
+    }
 
-.search-container input[type="text"]:focus {
-    box-shadow: 0 0 8px 0 rgba(252, 172, 121, 0.8); /* Focus schaduw */
-}
+    .search-container input[type="text"]:focus {
+        box-shadow: 0 0 8px 0 rgba(252, 172, 121, 0.8); /* Focus schaduw */
+    }
 
-.search-result {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border-left: 3px solid #fcac79;
-}
-
+    .search-result {
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-left: 3px solid #fcac79;
+    }
 
 /* Toegevoegde stijlen voor contact-info en language-selector */
 .contact-info a, .language-selector select {
@@ -213,7 +213,7 @@ button:hover {
     right: 0;
     bottom: 0;
     color: white;
-    width: 55%;
+    width: 100%;
     height: 100%; /* Maakt de overlay de volledige grootte van de afbeelding */
     opacity: 1; /* Tekst is altijd zichtbaar */
     display: flex;
@@ -283,70 +283,87 @@ button:hover {
 .image-gallery a:hover .image-text1 {
     background-color: rgba(0, 0, 0, 0.7); /* Donkerdere achtergrond bij hover */
 }
-
-
-/* Basisstijlen: al toegepast in je CSS */
-
-@media (max-width: 768px) {
-    /* Stijlen voor tablets en mobiele apparaten */
-
-    .image-gallery {
-        flex-direction: column; /* Stapelt afbeeldingen verticaal */
-        align-items: center; /* Centreert items horizontaal */
-    }
-
-    .image-gallery a {
-        width: 90%; /* Maakt afbeeldingscontainers breder voor kleinere schermen */
-        height: auto; /* Aanpassen hoogte naar auto voor behoud van aspect ratio */
-    }
-
-    .image-gallery img {
-        height: auto; /* Aanpassen hoogte naar auto voor behoud van aspect ratio */
-    }
-
-    .search-container input[type="text"] {
-        width: 100%; /* Volle breedte van de container */
-        border-radius: 4px; /* Ronde hoeken rondom */
-    }
-
-    .search-container button {
-        width: 100%; /* Volle breedte van de container */
-        margin-top: 10px; /* Ruimte boven de knop */
-        border-radius: 4px; /* Ronde hoeken rondom */
-    }
-
-    #bovenbalk, header, footer {
-        flex-direction: column; /* Elementen verticaal stapelen */
-        padding: 10px; /* Aanpassen padding voor kleinere schermen */
-    }
-
-    #hoofdbalk img {
-        margin-bottom: 10px; /* Ruimte onder het logo */
-    }
-
-    .image-text1 {
-        font-size: 20px; /* Kleinere tekstgrootte voor betere leesbaarheid op kleine schermen */
-        padding: 8px 0; /* Aanpassen padding voor kleinere schermen */
-    }
-
-    /* Aanpassen van navigatie voor kleinere schermen */
-    #navigatie ul {
-        flex-direction: column; /* Verticale uitlijning van menu-items */
-    }
-
-    #navigatie li a {
-        padding: 10px; /* Aangepaste padding voor kleinere schermen */
-    }
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Afstand tussen de afbeeldingen */
+    margin-top: 20px; /* Afstand vanaf de bovenstaande inhoud */
 }
 
-@media (max-width: 480px) {
-    /* Extra aanpassingen voor zeer kleine schermen, zoals mobiele telefoons */
-
-    .image-gallery a {
-        width: 95%; /* Nog breder voor zeer kleine schermen */
-    }
-
-    .search-container form, .search-container input[type="text"], .search-container button {
-        flex-direction: column; /* Elementen verticaal stapelen */
-    }
+.image-container {
+    flex: 1; /* Zorgt ervoor dat alle containers gelijk verdelen over de beschikbare ruimte */
+    max-width: 28%; /* Maximale breedte van elke container om drie naast elkaar te passen */
 }
+
+.image-container img {
+    width: 100%; /* Maakt de afbeelding zo breed als de container */
+    height: auto; /* Behoudt de aspect ratio van de afbeelding */
+}
+.fact-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 700px;
+    height: 100px;
+    margin: auto; /* Hiermee wordt de container in het midden van het scherm geplaatst */
+    margin-top: 50px; /* Je kunt de marge aanpassen naar wens */
+}
+  
+  #fact {
+    margin-bottom: 40px;
+  }
+  button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  button:hover {
+    background-color: #FCAC79;
+  }
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.horse-display {
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 20px;
+    width: 200px; /* Je kunt de breedte naar wens aanpassen */
+}
+
+.horse-display img {
+    width: 70%; /* Alle afbeeldingen nemen nu de volledige breedte van de .horse-display container in beslag */
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

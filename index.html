@@ -21,13 +21,11 @@
 </div>
 
 </div>
+
     <header id="hoofdbalk">
   <img id="logo" src="logo.png" alt="GalopGids Logo"> <!-- Vervang 'pad/naar/jouw/logo.png' met het pad naar je logo -->
   
-<div class="search-container">
-    <input type="text" id="searchInput" placeholder="Zoeken...">
-    <button onclick="searchSite()">Zoek</button>
-</div>
+
 <div id="searchResults"></div>
 </header>
 
@@ -114,7 +112,7 @@
     <main>
 	<div class="container">
     <a href="https://voorbeeldpagina.com" class="image-link">
-        <img src="veulen1.jpg" alt="Omschrijving van de afbeelding">
+        <img src="dressuur.jpg" alt="Omschrijving van de afbeelding">
         <div class="overlay">
           <img src="overafb.png" alt="Beschrijvende tekst van de afbeelding">
 		  
@@ -143,6 +141,40 @@
         <div class="image-text1">Uitrusting</div>
     </a>
 </div>
+ <div class="full-width-image">
+        <img src="beoordeling.png" alt="Omschrijving van de nieuwe afbeelding">
+    </div>
+	<div class="image-row">
+    <div class="image-container">
+        <img src="beoordeling1.png" alt="Omschrijving afbeelding 1">
+    </div>
+    <div class="image-container">
+        <img src="beoordeling3.png" alt="Omschrijving afbeelding 2">
+    </div>
+    <div class="image-container">
+        <img src="beoordeling2.png" alt="Omschrijving afbeelding 3">
+    </div>
+</div>
+ <div class="full-width-image">
+        <img src="weetjes.png" alt="Omschrijving van de nieuwe afbeelding">
+    </div>
+	<div class="fact-container">
+  <div id="fact">Klik op de knop om een weetje over paarden te leren!</div>
+  <button onclick="showFact()">Volgend Weetje</button>
+</div>
+ <div class="full-width-image">
+        <img src="paardenrassen.png" alt="Omschrijving van de nieuwe afbeelding">
+    </div>
+	    <div class="gallery-container">
+        <button class="prev" onclick="changeHorse(-1)">Vorige</button>
+        <div class="horse-display">
+            <img src="" id="horseImage" alt="Paard">
+            <h2 id="horseName">Naam van het Paardenras</h2>
+            <p id="horseDescription">Beschrijving van het Paardenras</p>
+        </div>
+        <button class="next" onclick="changeHorse(1)">Volgende</button>
+    </div>
+
     </main>
 	<script src="script.js"></script>
 </body>
