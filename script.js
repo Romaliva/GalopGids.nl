@@ -77,3 +77,27 @@ function changeHorse(direction) {
 // Initialiseer de eerste weergave
 changeHorse(0);
 
+window.onload = function() {
+    var languageSelect = document.querySelector('.language-selector select');
+    var currentUrl = window.location.href;
+
+    for (var i = 0; i < languageSelect.options.length; i++) {
+        if (currentUrl.endsWith(languageSelect.options[i].value)) {
+            languageSelect.selectedIndex = i;
+            break;
+        }
+    }
+};
+
+function controleerAntwoord(gekozenRas) {
+    const correctAntwoord = "Fries"; // Stel het correcte antwoord in
+    const resultaatElement = document.getElementById("quiz-resultaat");
+
+    if (gekozenRas === correctAntwoord) {
+        resultaatElement.innerHTML = "Correct! Het is inderdaad een " + correctAntwoord + ".";
+        resultaatElement.style.color = "green";
+    } else {
+        resultaatElement.innerHTML = "Helaas, dat is niet juist. Probeer het nog eens!";
+        resultaatElement.style.color = "red";
+    }
+}

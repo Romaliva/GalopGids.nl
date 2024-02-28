@@ -33,55 +33,6 @@ body {
 }
 
 
-    /* Stijl voor zoekcontainer */
-    .search-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        margin-top: 70px; /* Bestaande waarde, verhoog deze waarde om de zoekbalk lager te plaatsen */
-    }
-
-    .search-container form {
-        display: flex;
-    }
-
-    .search-container input[type="text"] {
-        padding: 10px;
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: #333;
-        width: 600px;
-        border-radius: 4px 0 0 4px; /* Ronde hoeken aan de linkerkant */
-        transition: all 0.3s ease;
-    }
-
-    .search-container button {
-        padding: 10px;
-        font-size: 16px;
-        background-color: #FCAC79; /* Knop kleur */
-        color: white;
-        border: none;
-        cursor: pointer;
-        border-radius: 0 4px 4px 0; /* Ronde hoeken aan de rechterkant */
-        transition: background-color 0.3s ease;
-    }
-
-    .search-container button:hover {
-        background-color: #e6956f; /* Donkerder tint voor hover effect */
-    }
-
-    .search-container input[type="text"]:focus {
-        box-shadow: 0 0 8px 0 rgba(252, 172, 121, 0.8); /* Focus schaduw */
-    }
-
-    .search-result {
-        margin-bottom: 10px;
-        padding: 10px;
-        background-color: #f0f0f0;
-        border-left: 3px solid #fcac79;
-    }
 
 /* Toegevoegde stijlen voor contact-info en language-selector */
 .contact-info a, .language-selector select {
@@ -269,7 +220,7 @@ button:hover {
 
 .image-text1 {
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     left: 0;
     width: 100%; /* Volle breedte van de parent */
     background-color: rgba(0, 0, 0, 0.5); /* Halfdoorzichtige achtergrond voor tekst */
@@ -349,6 +300,218 @@ button:hover {
     height: auto;
 }
 
+.modern-footer {
+    background-color: #333;
+    color: #FCAC79;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.modern-footer .footer-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.modern-footer p, .modern-footer a {
+    color: #FCAC79;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.modern-footer a:hover {
+    color: #ffffff;
+}
+
+.footer-links, .footer-socials {
+    margin: 10px 0;
+}
+
+
+
+
+.paarden-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.paarden-item {
+    flex: 1;
+    min-width: 300px; /* Zorgt ervoor dat de items niet te smal worden */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden; /* Zorgt ervoor dat de afbeeldingen netjes passen */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.paarden-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Zorgt ervoor dat de afbeeldingen goed passen zonder te vervormen */
+}
+
+.paarden-item h2, .paarden-item p, .paarden-item ul {
+    padding: 0 20px;
+}
+
+.paarden-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.paarden-item ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.vinkje:before {
+    content: "\2714"; /* Unicode voor het vinkje */
+    /* Andere stijlen zoals hierboven */
+}
+
+.kruisje:before {
+    content: "\2716"; /* Unicode voor het kruisje */
+    /* Andere stijlen zoals hierboven */
+}
+
+.paarden-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.paard-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.paard-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.paard-item h3, .paard-item p {
+  padding: 0 15px;
+}
+
+.paard-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.koudbloed-verslag {
+    max-width: 800px;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.koudbloed-verslag h2, .koudbloed-verslag h3 {
+    color: #333;
+}
+
+.koudbloed-verslag p, .koudbloed-verslag ul {
+    line-height: 1.6;
+    color: #666;
+}
+
+.koudbloed-verslag ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.koudbloed-verslag ul li::before {
+    content: '• ';
+    color: #333;
+    font-weight: bold;
+}
+
+.verslag-img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+.warmbloed-verslag {
+    max-width: 800px;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.warmbloed-verslag h2, .warmbloed-verslag h3 {
+    color: #333;
+}
+
+.warmbloed-verslag p, .warmbloed-verslag ul {
+    line-height: 1.6;
+    color: #666;
+}
+
+.warmbloed-verslag ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.warmbloed-verslag ul li::before {
+    content: '• ';
+    color: #333;
+    font-weight: bold;
+}
+
+.verslag-img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+.raad-het-ras {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-top: 20px;
+}
+
+.quiz-container {
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.quiz-img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.antwoord-opties {
+    margin: 10px 0;
+}
+
+.quiz-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #8aacc8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-btn:hover {
+    background-color: #557a95;
+}
 
 
 
@@ -360,6 +523,162 @@ button:hover {
 
 
 
+
+
+
+
+
+
+@media (max-width: 768px) {
+    #bovenbalk, #hoofdbalk, #navigatie {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    #bovenbalk, header, footer {
+        padding: 10px;
+    }
+
+    #navigatie ul {
+        text-align: center;
+        width: 100%;
+    }
+
+    #navigatie li {
+        display: block;
+        width: 100%;
+    }
+
+    #navigatie li a {
+        padding: 10px;
+        border-bottom: 1px solid #484848;
+    }
+
+    .dropdown-content {
+        position: static;
+        background-color: #292929;
+    }
+
+    .dropdown-content a {
+        color: #FCCB90;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        background-color: #292929;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #333333;
+        color: white;
+    }
+
+    .dropdown:hover .dropdown-content, .dropdown-content a:hover {
+        background-color: #333;
+    }
+
+    /* Zorgt ervoor dat de navigatiebalk niet meer sticky is */
+    #navigatie {
+        position: static; /* Verandert de positie naar static */
+    }
+	 main {
+        padding: 10px; /* Verklein padding voor meer ruimte */
+    }
+
+    .container, .image-link img, .overlay, .full-width-image img, .fact-container, .gallery-container, {
+        width: 100%; /* Zorgt dat deze elementen de volle breedte gebruiken */
+    }
+	
+
+    .image-gallery, .image-row{
+        flex-direction: column; /* Stapelt afbeeldingen verticaal */
+        align-items: center; /* Centreert items */
+    }
+    .gallery-container {
+        max-width: 95%; /* Aangepast voor consistentie */
+        margin: auto; /* Centreert de container binnen zijn ouder */
+        padding: 0 10px; /* Voegt padding toe aan de zijkanten voor wat ruimte */
+        display: flex; /* Zorgt voor een flexibele layout */
+        flex-direction: column; /* Stapelt items verticaal */
+        align-items: center; /* Centreert items horizontaal */
+    }
+
+    .gallery-container .prev, .gallery-container .next {
+        font-size: 14px; /* Verkleint de tekstgrootte voor betere leesbaarheid */
+        padding: 8px 16px; /* Past padding aan voor comfortabeler klikken */
+        margin: 5px; /* Voegt een kleine marge toe rond de knoppen */
+        width: auto; /* Zorgt ervoor dat de breedte zich aanpast aan de tekst */
+        min-width: 100px; /* Zorgt voor een minimale breedte zodat de knoppen niet te klein worden */
+    }
+
+    .image-gallery a, .image-container, .horse-display {
+        width: 100%; /* Past de breedte aan zodat deze de volledige beschikbare ruimte inneemt */
+        max-width: 100%; /* Voorkomt dat elementen buiten hun container uitsteken */
+        margin-bottom: 20px; /* Behoudt ruimte tussen gestapelde afbeeldingen */
+    }
+
+    .image-gallery a img, .image-container img, .horse-display img {
+        width: 100%; /* Zorgt ervoor dat afbeeldingen zich aanpassen aan de breedte van hun container */
+        height: auto; /* Behoudt de aspectratio van de afbeeldingen */
+    }
+    .overlay {
+        font-size: 18px; /* Maakt tekst kleiner voor betere leesbaarheid */
+        padding: 10px; /* Vermindert padding */
+    }
+
+
+    .fact-container {
+        width: 80%; /* Maakt de container iets smaller dan volledige breedte voor padding */
+        margin-top: 30px; /* Past de marge bovenaan aan */
+        padding: 40px; /* Verkleint de padding */
+    }
+
+    button, .contact-info a, .language-selector select {
+        font-size: 14px; /* Verkleint de fontgrootte voor betere leesbaarheid op kleine schermen */
+        padding: 8px 15px; /* Verkleint padding voor knoppen en links */
+    }
+
+    .modern-footer {
+        padding: 15px 10px; /* Verkleint de padding voor een compactere weergave */
+        font-size: 14px; /* Verkleint de tekst voor betere leesbaarheid */
+    }
+
+    .modern-footer .footer-content {
+        display: flex;
+        flex-direction: column; /* Stapelt de content verticaal */
+        align-items: center; /* Centreert de content */
+        gap: 15px; /* Voegt ruimte toe tussen elementen */
+    }
+
+    .footer-links, .footer-socials {
+        justify-content: center;
+        width: 100%; /* Benut de volledige breedte voor link lijsten */
+    }
+
+    .footer-links li, .footer-socials li {
+        margin-bottom: 5px; /* Voegt een kleine marge toe onder elke link voor betere scheiding */
+    }
+
+    .modern-footer p, .modern-footer a {
+        text-align: center; /* Zorgt dat alle tekst gecentreerd is */
+       
+        margin-bottom: 5px; /* Voegt marge toe voor scheiding */
+    }
+
+    .modern-footer a {
+        font-size: 14px; /* Verzekert dat de linktekst niet te groot is voor mobiele schermen */
+        padding: 5px; /* Verbetert de klikbaarheid door de padding te vergroten */
+    }
+    .paarden-container {
+        flex-direction: column;
+    }
+
+    .paard-item, .full-width-image {
+        width: 100%; /* Zorgt ervoor dat elk item de volledige breedte van de container inneemt */
+        margin: 10px 0; /* Aanpassen voor nette spacing */
+    }
+}
 
 
 
