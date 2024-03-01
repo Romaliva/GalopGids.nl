@@ -513,6 +513,353 @@ button:hover {
     background-color: #557a95;
 }
 
+#voedingSectie {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.paarden-container1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.paarden-item1 {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+}
+
+.paarden-img1 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.paarden-item1 h3 {
+    color: #333;
+    padding-top: 15px;
+}
+
+.paarden-item1 p {
+    padding: 0 15px 20px 15px;
+    color: #666;
+    font-size: 14px;
+    text-align: left;
+}
+
+.sociale-interactie-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sociale-interactie-container h2 {
+    color: #FCAC79;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sectie {
+    margin-bottom: 15px;
+}
+
+.sectie h3 {
+    color: #FCAC79;
+    margin-bottom: 5px;
+}
+
+.sectie p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.huisvesting-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.huisvesting-container h2 {
+    text-align: center;
+    color: #FCAC79;
+}
+
+.huisvesting-sectie {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.huisvesting-img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.huisvesting-sectie h3 {
+    margin: 0 0 5px 0;
+    color: #FCAC79;
+}
+
+.huisvesting-sectie p {
+    font-size: 16px;
+    color: #666;
+}
+
+#grondwerk {
+    padding: 20px;
+    background-color: #F9F9F9;
+    margin-bottom: 20px;
+}
+
+#grondwerk h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.grondwerk-sectie {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.grondwerk-img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.grondwerk-sectie h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.grondwerk-sectie p {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.specifiek-onderwerp {
+    background-color: #ffffff; /* Lichtere achtergrond voor nadruk */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Zorgt voor wat extra ruimte rondom de sectie */
+}
+
+.specifiek-onderwerp h3 {
+    color: #007bff; /* Blauw voor titel voor consistentie */
+}
+
+.specifiek-onderwerp p {
+    font-size: 16px; /* Zorgt voor leesbaarheid */
+    color: #666; /* Donkergrijs voor tekst voor zachtheid */
+    line-height: 1.6;
+}
+.obstakels-overwinnen { /* Unieke klasse voor dit specifieke onderwerp */
+    background-color: #f0f8ff; /* Een zachte, unieke achtergrondkleur */
+}
+.grondwerk-sectie h4 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.grondwerk-sectie ul {
+    list-style: inside square;
+    margin-left: 20px;
+}
+
+.grondwerk-sectie li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #666;
+}
+.leiden ul {
+    list-style-type: disc; /* Of een andere stijl die je prefereert */
+    margin-left: 20px;
+}
+
+.leiden li {
+    margin-bottom: 10px; /* Zorgt voor voldoende ruimte tussen de lijstitems */
+}
+.wijken-voor-druk ul {
+    list-style-type: circle; /* Kies een stijl die past bij het ontwerp van je site */
+    margin-left: 20px;
+}
+
+.wijken-voor-druk li {
+    margin-bottom: 8px; /* Zorgt voor een duidelijke scheiding tussen de lijstitems */
+}
+.longeren ul {
+    list-style-type: disc; /* Of een andere stijl die je prefereert */
+    margin-left: 20px;
+}
+
+.longeren li {
+    margin-bottom: 10px; /* Zorgt voor voldoende ruimte tussen de lijstitems */
+}
+.vrij-werk ul {
+    list-style-type: square; /* Een visuele indicatie die past bij het thema vrijheid en verkenning */
+    margin-left: 20px;
+}
+
+.vrij-werk li {
+    margin-bottom: 8px; /* Zorgt voor een duidelijke scheiding tussen de lijstitems */
+}
+
+#sportfokkerij {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    width: calc(33% - 20px);
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+}
+#basis-sportfokkerij {
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#basis-sportfokkerij h2, #basis-sportfokkerij h3 {
+    color: #333;
+}
+
+#basis-sportfokkerij p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 16px;
+}
+#fokstrategieen {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#fokstrategieen h2, #fokstrategieen h3 {
+    color: #333;
+}
+
+#fokstrategieen p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 16px;
+}
+#succesverhalen {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.succesverhaal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.succesverhaal img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.succesverhaal h3 {
+    margin-top: 0;
+}
+
+.succesverhaal p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+#ruiters-uitrusting {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+#ruiters-uitrusting h2 {
+    color: #333;
+    text-align: center;
+}
+
+.uitrusting-item {
+    background-color: #ffffff;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+}
+
+.uitrusting-item img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.uitrusting-item h3 {
+    margin-top: 0;
+}
+
+.uitrusting-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
 
 
 
@@ -678,10 +1025,66 @@ button:hover {
         width: 100%; /* Zorgt ervoor dat elk item de volledige breedte van de container inneemt */
         margin: 10px 0; /* Aanpassen voor nette spacing */
     }
+	    .paarden-item {
+        width: calc(50% - 20px);
+    }
+
+    .huisvesting-sectie {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .huisvesting-img {
+        margin-bottom: 15px;
+    }
+
+  .grondwerk-sectie {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grondwerk-img {
+        margin: auto;
+    }
+	    .specifiek-onderwerp {
+        text-align: center;
+    }
+	    .specifiek-onderwerp img {
+        margin: auto; /* Centreert de afbeelding in responsieve modus */
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+  #succesverhalen {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .succesverhaal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .succesverhaal img {
+        width: 100%; /* Maak de afbeelding responsief */
+        max-width: 300px; /* Zorg ervoor dat de afbeelding niet te groot wordt */
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .succesverhaal h3, .succesverhaal p {
+        padding: 0 10px; /* Voeg padding toe voor tekst op kleinere schermen */
+    }
 }
-
-
-
 
 
 
